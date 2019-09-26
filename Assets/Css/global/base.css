@@ -1,69 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.com { color: #93a1a1; }
-.lit { color: #195f91; }
-.pun, .opn, .clo { color: #93a1a1; }
-.fun { color: #dc322f; }
-.str, .atv { color: #D14; }
-.kwd, .prettyprint .tag { color: #1e347b; }
-.typ, .atn, .dec, .var { color: teal; }
-.pln { color: #48484c; }
-
-.prettyprint {
-  padding: 8px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-}
-.prettyprint.linenums {
-  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-}
-
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-  margin: 0 0 0 33px; /* IE indents via margin-left */
-}
-ol.linenums li {
-  padding-left: 12px;
-  color: #bebec5;
-  line-height: 20px;
-  text-shadow: 0 1px 0 #fff;
-}
-
-@import "../src/normalise.css";
+@import "../vendor/normalise.css";
 
 
 html {
@@ -120,7 +55,7 @@ select {
     height: 48px;
     padding: 0 32px 0 16px;
     min-width: 100px;
-    width: 95%;
+    width: 100%;
     background: #fff;
     -webkit-box-shadow: 0 0 4px 1px transparent;
     box-shadow: 0 0 4px 1px transparent;
@@ -181,7 +116,7 @@ textarea {
     border-width: 1px;
     border-radius: 2px;
     margin-bottom: 8px;
-    width: 95%;
+    width: 100%;
     color: #5c5c5c;
     font-size: 16px;
     line-height: 18px;
@@ -213,7 +148,7 @@ button {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     text-decoration: none;
-    width: 95%;
+    width: 100%;
 }
 
 button:hover {
@@ -231,7 +166,6 @@ hr {
   background-color: #ffffff;
   width: 106px;
   padding-top: 10px;
-  padding-bottom: 10px;
   text-align: center;
   margin: 0 auto;
 }
@@ -267,14 +201,6 @@ img {
     margin-top: 0;
   }
 
-  .pError {
-  	color: #f01b1b;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    margin-bottom: 16px;
-    margin-top: 0;
-  }
   b,
   strong {
     font-weight: 600;
